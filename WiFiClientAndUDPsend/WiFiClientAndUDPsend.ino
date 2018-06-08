@@ -4,6 +4,7 @@
 #include <WiFiUdp.h>
 #include <Wire.h>
 #include <Adafruit_INA219.h>
+#include "wifidetails.h"
 
 
 
@@ -41,6 +42,7 @@ void setup() {
     Serial.println("");
     Serial.println("WiFi connected");  
     Serial.print("IP address: ");
+    
     Serial.println(WiFi.localIP());
 
     Serial.print("Udp server starting at port ");
@@ -91,6 +93,7 @@ void loop() {
     Serial.print("Load Voltage:  "); Serial.print(loadvoltage); Serial.println(" V");
     Serial.print("Current:       "); Serial.print(current_mA); Serial.println(" mA");
     Serial.println("");
+    Serial.print(a);
 
 
 
